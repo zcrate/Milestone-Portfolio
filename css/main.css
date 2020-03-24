@@ -26,10 +26,13 @@ body {
   padding: 0 auto;
 }
 
+/** EVERYTHING **/
+
 a {text-decoration:none; color: inherit;}
 a:visited {color: inherit;}
 
 li {list-style-type:none;}
+
 /** HEADER SECTION **/
 
 header {
@@ -61,28 +64,98 @@ nav li {
   line-height: 35px;
 }
 
-
 #intro {
-  width: 1100px;
+  width: 1000px;
   position: relative;
   top: 275px;
   left: 400px;
   right: 0;
   background-clip: content-box;
   background-color: #39f9;
-  text-align: center;
+  text-align: left;
 }
   #intro h1, #intro h2 {
     width: 600px;
     margin: 0;
   }
   #intro h1 {
-    padding: 15px 5px 15px 5;
+    padding: 15px 5px 15px 25px;
     font-size: 60px;
   }
   #intro h2 {
     font-size: 45px;
-    padding: 0 5px 15px 5px;
-    font-family: Alegreya;
+    padding: 0 5px 15px 40px;
+    font-family:"Alegreya", serif;
     font-weight: 300;
+  }
+
+/** MAIN **/
+
+main {
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0;
+  position: -webkit-sticky; /* for Safari browsers */
+  position: sticky;
+  top: 15px;
+  text-align: center;
+  font-size: 42px;
+  line-height: 27px;
+  font-family:"Alegreya", serif;
+  background-color: #39f9;
+  box-shadow: 0 2px 2px #80808099;
+  z-index: 3;
+  }
+
+/** PORTFOLIO SECTION **/
+
+#portfolio {
+  margin: 0 auto;
+}
+
+.project {
+  height: 400px;
+  margin: 15px auto 30px auto;
+  padding: 15px 0 30px 0;
+  background-repeat: no-repeat;
+  background-position: 400px 15px;
+}
+  #pickings {
+    background-image: linear-gradient(to bottom right,#79A87E99,#fff9);
+  }
+  #austen {
+    background-image: linear-gradient(to bottom right,#C87F5799,#fff9);
+  }
+  #other {
+    background-image: linear-gradient(to bottom right,#39f9,#fff9);
+  }
+
+.project h4 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+.project-image a > img {
+  margin: 0;
+  width: 600px;
+  border: 5px solid #0009;
+  box-shadow: 3px 3px 4px #808080;
+  transition:.5s;
+}
+  .project-image:hover img {
+    width: 620px;
+    box-shadow: 6px 6px 8px #808080;
+    transition: .5s ease;
+  }
+
+.project-detail {
+  padding: 30px 0;
+  }
+  .project-detail p {
+    margin: 30px 40px;
+    line-height: 40px;
+    font-size: 25px;
   }
