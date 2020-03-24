@@ -104,6 +104,7 @@ main {
   font-size: 42px;
   line-height: 27px;
   font-family:"Alegreya", serif;
+  font-weight: bold;
   background-color: #39f9;
   box-shadow: 0 2px 2px #80808099;
   z-index: 3;
@@ -111,9 +112,7 @@ main {
 
 /** PORTFOLIO SECTION **/
 
-#portfolio {
-  margin: 0 auto;
-}
+#portfolio {margin: 0 auto;}
 
 .project {
   height: 400px;
@@ -140,14 +139,13 @@ main {
 
 .project-image a > img {
   margin: 0;
-  width: 600px;
+  width: 580px;
   border: 5px solid #0009;
-  box-shadow: 3px 3px 4px #808080;
   transition:.5s;
 }
-  .project-image:hover img {
-    width: 620px;
-    box-shadow: 6px 6px 8px #808080;
+  .project-image img:hover {
+    width: 600px;
+    box-shadow: -7px 6px 8px #808080;
     transition: .5s ease;
   }
 
@@ -159,3 +157,51 @@ main {
     line-height: 40px;
     font-size: 25px;
   }
+
+/** ABOUT SECTION **/
+#about {margin: 0 auto;}
+
+#aboutme {
+  height: 500px;
+  margin: 0 auto 30px auto;
+  padding: 15px 0 30px 0;
+}
+  #aboutme h4 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+  }
+
+.about-image img {
+  margin: 0 60px 0 80px;
+  width: 400px;
+  padding: 25px 25px;
+  border: 5px solid #0009;
+  transition:.5s;
+}
+    .about-image:hover img {
+      width: 420px;
+      box-shadow: -7px 6px 8px #808080;
+      transition: .5s ease;
+    }
+
+  #image2 {
+    display: none;
+  }
+  .about-image:active #image1 {
+    display: none;
+  }
+  .about-image:active #image2 {
+    display: inline;
+  }
+
+.about-detail {
+  height:auto;
+  padding: 20px 0;
+}
+.about-detail p {
+  margin: 15px 80px 0 0;
+  font-size: 20px;
+  line-height: 45px;
+  font-family:"Alegreya", serif;
+}
