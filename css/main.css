@@ -17,7 +17,6 @@ html {
   margin: 0 auto;
   padding: 0 auto;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -28,7 +27,7 @@ body {
 
 /** EVERYTHING **/
 
-a {text-decoration:none; color: inherit;}
+a {text-decoration: none; color: inherit;}
 a:visited {color: inherit;}
 
 li {list-style-type:none;}
@@ -45,7 +44,7 @@ header {
   color: #fff;
 }
 
-nav {
+header nav {
   width: 900px;
   position: relative;
   top: 75px;
@@ -53,11 +52,11 @@ nav {
   left: 0;
   background-color: #39f9;
 }
-nav ul {
+header nav ul {
   margin: 0;
   text-align: right;
 }
-nav li {
+header nav li {
   display: inline;
   margin: 0 10px 0 75px;
   font-size: 25px;
@@ -95,24 +94,81 @@ main {
   margin: 0 auto;
 }
 
-.section-title {
-  margin: 0;
+.title {
+  margin: -10px;
+  width: 1400px;
+  height: 30px;
   position: -webkit-sticky; /* for Safari browsers */
   position: sticky;
   top: 15px;
+  color: #000f;
   text-align: center;
-  font-size: 42px;
-  line-height: 27px;
-  font-family:"Alegreya", serif;
+  background-image: linear-gradient(to right, #85c2ff, #39f9, #85c2ff);
+  background-size: auto 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.left {
+  float: left;
+  margin: 0;
+  padding: 5px 0;
+  width: 33%;
+  font-size: 18px;
   font-weight: bold;
-  background-color: #39f9;
-  box-shadow: 0 2px 2px #80808099;
+  line-height: 20px;
+}
+  .left h3 {margin: 0}
+
+.center {
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-family:"Alegreya", serif;
+  position: -webkit-sticky; /* for Safari browsers */
+  position: sticky;
+  top: 15px;
   z-index: 3;
+}
+  .center h4 {margin: 0}
+
+.right {
+  float: right;
+  margin: -2.5px;
+  padding: 5px 0;
+  width: 33%;
+  line-height: 20px;
+  font-size: 25px;
+  z-index: 4;
+}
+  .icon {
+    display: inline;
+    margin: 0 30px 0 0;
+    height: 25px;
+    width: 25px;
+    background-color: #85c2ff;
+    border-radius: 50%;
+    padding: 5px;
   }
+  .icon a {
+    width: 100%;
+  }
+  .icon img, .fas {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    vertical-align: top
+  }
+  .icon a[href="#home"] {padding: 0 1.6px;}
+  .icon a[href="#about"], .icon a[href="#contact"] {padding: 0 3.16px;}
 
 /** PORTFOLIO SECTION **/
 
 #portfolio {margin: 0 auto;}
+
+#portfolio .center {margin: -30px 0 0 0;}
 
 .project {
   height: 400px;
@@ -131,7 +187,7 @@ main {
     background-image: linear-gradient(to bottom right,#39f9,#fff9);
   }
 
-.project h4 {
+.project h5 {
   margin: 10px 0;
   text-align: center;
   font-size: 25px;
@@ -145,7 +201,7 @@ main {
 }
   .project-image img:hover {
     width: 600px;
-    box-shadow: -7px 6px 8px #808080;
+    box-shadow: -7px 6px 8px #808080BF;
     transition: .5s ease;
   }
 
@@ -164,34 +220,47 @@ main {
 #aboutme {
   height: 500px;
   margin: 0 auto 30px auto;
-  padding: 15px 0 30px 0;
+  padding: 15px 0 15px 0;
 }
-  #aboutme h4 {
-    margin: 10px 0;
+  #aboutme h5 {
+    margin: 15px 0 15px 0;
     text-align: center;
     font-size: 30px;
   }
 
-.about-image img {
+#images {
   margin: 0 60px 0 80px;
-  width: 400px;
-  padding: 25px 25px;
   border: 5px solid #0009;
-  transition:.5s;
+  padding: 20px 20px;
+  width: 400px;
+  height: 400px;
+  transition:.5s ease-out;
 }
-    .about-image:hover img {
-      width: 420px;
-      box-shadow: -7px 6px 8px #808080;
-      transition: .5s ease;
-    }
+  #images img {
+    width: 400px;
+    transition: .5s ease-out;
+  }
+
+  #images:hover {
+    margin: -10px 50px 0 70px;
+    padding: 10px 30px;
+    width: 400px;
+    height: 440px;
+    box-shadow: -5px 4px 5px #808080BF, -5px 4px 5px #80808099 inset;
+    background-color: ;
+  }
+  #images:hover img {
+    width: 460px;
+    box-shadow: -7px 6px 8px #808080BF;
+  }
 
   #image2 {
     display: none;
   }
-  .about-image:active #image1 {
+  #images:active #image1 {
     display: none;
   }
-  .about-image:active #image2 {
+  #images:active #image2 {
     display: inline;
   }
 
@@ -204,4 +273,46 @@ main {
   font-size: 20px;
   line-height: 45px;
   font-family:"Alegreya", serif;
+}
+
+/** CONTACT SECTION **/
+#contact {
+  margin: 0 auto;
+  height: 350px;
+  background: #39f;
+  background-position:
+}
+
+  #contact h5 {
+    margin: 60px 0 50px 0;
+    text-align: center;
+    font-size: 25px;
+  }
+  #contact img {
+    width: 40px;
+    height: 40px;
+  }
+
+#email {
+  margin: 0 auto;
+  text-align: center;
+}
+#email a {
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#follow {
+  text-align: center;
+}
+
+#follow a img {
+  padding: 0 40px;
+}
+
+#meet p {
+  padding: 0 10px 0 25px;
+  font-size: 20px;
+  font-weight: bold;
 }

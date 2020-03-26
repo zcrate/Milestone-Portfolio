@@ -3,16 +3,17 @@
   <head>
     <title>Zachary Crate</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="img/zcrate-headframe-blk.png" />
+    <link rel="icon" type="image" href="img/zc-contour-blk.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Bellota+Text&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f40c4c9e13.js" crossorigin="anonymous"></script>
   </head>
 
 <body>
 
 <!-- HEADER SECTION -->
-  <header>
+  <header id="home">
 
     <nav>
       <ul>
@@ -30,14 +31,32 @@
 
   <main>
 
+    <!--TITLE-->
 
+    <div class="title">
+
+      <div class="left"><h3>ZACHARY CRATE</h3></div>
+
+      <div class="right">
+        <div class="icon">
+          <a href="#home"><i class="fas fa-home"></i></a></div>
+        <div class="icon">
+          <a href="#portfolio"><i class="fas fa-laptop-code"></i></a></div>
+        <div class="icon">
+          <a href="#about"><i><img src="img/zc-headframe-rounded-blk.png" /></i></a></div>
+        <div class="icon">
+          <a href="#contact"><i class="fas fa-hand-spock"></i></a></div>
+      </div>
+
+    </div>
 <!-- PORTFOLIO SECTION -->
 
     <section id="portfolio">
-      <div class="section-title">My Portfolio</div>
+        <div class="center"><h4>My Portfolio</h4></div>
+
    <!-- Rogue Pickings -->
       <div id="pickings" class="full-width project">
-        <h4>Rogue Pickings</h4>
+        <h5>Rogue Pickings</h5>
         <div class="half-width project-image">
           <a href="https://zcrate.github.io/Rogue-Pickings/" target="_blank" >
             <img src="img/Rogue-Pickings-Sample.png" alt="Rogue Pickings" /></a>
@@ -50,7 +69,7 @@
       </div>
    <!-- Jubilee Austen -->
       <div id="austen" class="full-width project">
-        <h4>Jubilee Austen Portfolio</h4>
+        <h5>Jubilee Austen Portfolio</h5>
         <div class="half-width project-image">
           <a href="https://zcrate.github.io/Jubilee-Austen/" target="_blank">
             <img src="img/Jubilee-Austen-Sample.png" alt="Jubilee Austen" /></a>
@@ -63,7 +82,7 @@
       </div>
 
       <div id="other" class="full-width project">
-        <h4>TBD Exercise</h4>
+        <h5>TBD Exercise</h5>
         <div class="half-width project-image">
           <a href="" target="_blank">
             <img src="" alt="" /></a>
@@ -77,13 +96,15 @@
 
 <!-- ABOUT SECTION -->
     <section id="about">
-      <h3 class="section-title">About Me</h3>
+      <div class="center"><h4>About Me</h4></div>
 
       <div id="aboutme" class="full-width">
-        <h4>Zachary Crate</h4>
+        <h5>Zachary Crate</h5>
         <div class="half-width about-image">
-          <img id="image1" src="img/zcrate-photo.png" alt="Me" />
-          <img id="image2" src="img/zcrate-crown.png" alt="I'm Awesome." />
+          <div id="images">
+            <img id="image1" src="img/zc-photo-color.png" alt="Me" />
+            <img id="image2" src="img/zc-photo-crown.png" alt="I'm Awesome." />
+          </div>
         </div>
 
         <div class="half-width about-detail">
@@ -94,26 +115,32 @@
     </section>
 
 
-    <h3 class="section-title">Contact</h3>
+
 <!-- CONTACT SECTION -->
+    <footer id="contact">
+      <div class="center"><h4>Let's Get In Touch!</h4></div>
 
-    <footer id="contact" class="full-width">
+      <div id="contactme" class="full-width">
+        <div id="email" class="third-width">
+          <h5>Email me</h5>
+          <a href="mailto:ZackDouglas1@gmail.com"><img src="img/envelope-icon.png" /></a>
+          <a href="mailto:ZackDouglas1@gmail.com">ZackDouglas1@gmail.com</a>
+        </div>
 
-      <div id="contact-email" class="third-width">
-        <h4>Email me</h4>
-        <a href="mailto:ZackDouglas1@gmail.com"><img src="img/envelope-icon.png" />ZackDouglas1@gmail.com</a>
+        <div id="follow" class="third-width">
+          <h5>Follow Me</h5>
+          <a href="https://github.com/zcrate">
+            <img src="img/github-icon.png" target="_blank" alt="github"/></a>
+          <a href="https://www.linkedin.com/in/zcrate/">
+            <img src="img/linkedin-icon.png" target="_blank" alt="linkedin"/></a>
+        </div>
+
+        <div id="meet" class="third-width">
+          <h5>Meet Me</h5>
+          <p>Let me know if you're in Central Maine, USA. I'm eager to meet you and discuss your future website!</p>
+        </div>
       </div>
 
-      <div id="contact-follow" class="third-width">
-        <h3>Follow Me</h3>
-        <a href="https://github.com/zcrate"><img src="img/github-icon.png" target="_blank" alt="github"/></a>
-        <a href="https://www.linkedin.com/in/zcrate/"><img src="img/linkedin-icon.png" target="_blank" alt="linkedin"/></a>
-      </div>
-
-      <div id="contact-meet" class="third-width">
-        <h3>Meet Me</h3>
-        <p>Let me know if you're in Central Maine, USA. I'm eager to meet you and discuss your future website!</p>
-      </div>
     </footer>
   </main>
   <h5>Copyright Zachary Crate 2020</h5>
