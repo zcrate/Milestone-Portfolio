@@ -19,12 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Bellota Text", sans-serif;
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
 /** EVERYTHING **/
 
 a {text-decoration: none; color: inherit;}
@@ -32,6 +26,78 @@ a:visited {color: inherit;}
 
 li {list-style-type:none;}
 
+/*** BODY ***/
+
+body {
+  font-family: "Bellota Text", sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.title-container {
+  margin: 0;
+  float: left;
+  padding: 75px 0 0 0;
+  height: 115px;
+  position: -webkit-sticky; /* for Safari browsers */
+  position: sticky;
+  top: -75px;
+}
+
+.title {
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  width: 1400px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  position: -webkit-sticky; /* for Safari browsers */
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to right, #39f9, #39f9);
+  z-index: 2;
+}
+
+.title-nav {
+  margin: 0 auto;
+  height: 40px;
+  width: 33%;
+  float: left;
+}
+  .title-nav a {
+    position: relative;
+  }
+  .title-nav ul, .title-nav li {
+    display: inline;
+    margin: 0 auto;
+    line-height: 15px;
+    font-size: 30px;
+  }
+  .title-nav li {
+    padding: 0 18px;
+  }
+  .title-nav img {
+    height: 30px;
+    vertical-align: bottom;
+  }
+
+.title-center {
+  float: left;
+  margin: 0;
+  height: 40px;
+  width: 34%}
+
+.title-me {
+  margin: 0 auto;
+  float: left;
+  width: 33%;
+}
+  .title-me h3 {
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 35px;
+  }
 /** HEADER SECTION **/
 
 header {
@@ -65,13 +131,14 @@ header nav li {
 
 #intro {
   width: 1000px;
-  position: relative;
-  top: 275px;
+  position: absolute;
+  top: 290px;
   left: 400px;
   right: 0;
   background-clip: content-box;
   background-color: #39f9;
   text-align: left;
+  z-index: 1;
 }
   #intro h1, #intro h2 {
     width: 600px;
@@ -80,6 +147,7 @@ header nav li {
   #intro h1 {
     padding: 15px 5px 15px 25px;
     font-size: 60px;
+    line-height: 60px;
   }
   #intro h2 {
     font-size: 45px;
@@ -93,62 +161,6 @@ header nav li {
 main {
   margin: 0 auto;
 }
-
-.title {
-  margin: 0 auto;
-  padding: 5px 0 0 0;
-  width: 1400px;
-  height: 40px;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  position: -webkit-sticky; /* for Safari browsers */
-  position: sticky;
-  top: 0;
-  background-image: linear-gradient(to right, #85c2ff, #85c2ff, #39f9, #85c2ff, #85c2ff);
-  z-index: 2;
-}
-
-.title-nav {
-  margin: 0 auto;
-  height: 40px;
-  width: 33%;
-  float: left;
-}
-  .title-nav a {
-    position: relative;
-    z-index: 4;
-  }
-  .title-nav ul, .title-nav li {
-    display: inline;
-    margin: 0 auto;
-    line-height: 15px;
-    font-size: 30px;
-  }
-  .title-nav li {
-    padding: 0 18px;
-  }
-  .title-nav img {
-    height: 30px;
-    vertical-align: bottom;
-  }
-
-.title-center {
-  float: left;
-  margin: 0;
-  height: 40px;
-  width: 34%}
-
-.title-me {
-  margin: 0 auto;
-  float: left;
-  width: 33%;
-}
-  .title-me h3 {
-    margin: 0 auto;
-    font-size: 30px;
-    line-height: 35px;
-  }
 
 .section-head {
   margin: 0 550px;
@@ -164,7 +176,7 @@ main {
   z-index: 3;
 }
   .section-head h4 {
-    margin: 15px;
+    margin: 0px 0 20px 0;
     font-weight: normal;
   }
 /** PORTFOLIO SECTION **/
@@ -316,4 +328,8 @@ main {
   padding: 0 10px 0 25px;
   font-size: 20px;
   font-weight: bold;
+}
+
+h6 {
+  margin: 0 50px;
 }
