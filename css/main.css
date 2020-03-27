@@ -95,80 +95,81 @@ main {
 }
 
 .title {
-  margin: -10px;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
   width: 1400px;
-  height: 30px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
   position: -webkit-sticky; /* for Safari browsers */
   position: sticky;
-  top: 15px;
-  color: #000f;
-  text-align: center;
-  background-image: linear-gradient(to right, #85c2ff, #39f9, #85c2ff);
-  background-size: auto 10px;
-  background-repeat: no-repeat;
-  background-position: center;
+  top: 0;
+  background-image: linear-gradient(to right, #85c2ff, #85c2ff, #39f9, #85c2ff, #85c2ff);
   z-index: 2;
 }
 
-.left {
+.title-nav {
+  margin: 0 auto;
+  height: 40px;
+  width: 33%;
+  float: left;
+}
+  .title-nav a {
+    position: relative;
+    z-index: 4;
+  }
+  .title-nav ul, .title-nav li {
+    display: inline;
+    margin: 0 auto;
+    line-height: 15px;
+    font-size: 30px;
+  }
+  .title-nav li {
+    padding: 0 18px;
+  }
+  .title-nav img {
+    height: 30px;
+    vertical-align: bottom;
+  }
+
+.title-center {
   float: left;
   margin: 0;
-  padding: 5px 0;
-  width: 33%;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-}
-  .left h3 {margin: 0}
+  height: 40px;
+  width: 34%}
 
-.center {
-  height: 30px;
-  line-height: 25px;
+.title-me {
+  margin: 0 auto;
+  float: left;
+  width: 33%;
+}
+  .title-me h3 {
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+.section-head {
+  margin: 0 550px;
+  width: 300px;
+  line-height: 40px;
+  font-size: 40px;
   text-align: center;
-  font-size: 30px;
-  font-family:"Alegreya", serif;
+  font-family: "Alegreya", serif;
+  color: #fff;
   position: -webkit-sticky; /* for Safari browsers */
   position: sticky;
-  top: 15px;
+  top: 0;
   z-index: 3;
 }
-  .center h4 {margin: 0}
-
-.right {
-  float: right;
-  margin: -2.5px;
-  padding: 5px 0;
-  width: 33%;
-  line-height: 20px;
-  font-size: 25px;
-  z-index: 4;
-}
-  .icon {
-    display: inline;
-    margin: 0 30px 0 0;
-    height: 25px;
-    width: 25px;
-    background-color: #85c2ff;
-    border-radius: 50%;
-    padding: 5px;
+  .section-head h4 {
+    margin: 15px;
+    font-weight: normal;
   }
-  .icon a {
-    width: 100%;
-  }
-  .icon img, .fas {
-    height: 25px;
-    width: 25px;
-    position: relative;
-    vertical-align: top
-  }
-  .icon a[href="#home"] {padding: 0 1.6px;}
-  .icon a[href="#about"], .icon a[href="#contact"] {padding: 0 3.16px;}
-
 /** PORTFOLIO SECTION **/
 
 #portfolio {margin: 0 auto;}
-
-#portfolio .center {margin: -30px 0 0 0;}
 
 .project {
   height: 400px;
