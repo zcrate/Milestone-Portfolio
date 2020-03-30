@@ -76,7 +76,13 @@ body {
   }
   .title-nav li {
     padding: 0 18px;
+    height: 45px;
+    overflow: hidden;
   }
+  .title-nav li:hover p{
+
+  }
+
   .title-nav img {
     height: 30px;
     vertical-align: bottom;
@@ -98,60 +104,43 @@ body {
     font-size: 30px;
     line-height: 35px;
   }
+
+
 /** HEADER SECTION **/
 
 header {
-  margin: 0;
+  margin: 0 auto 50px auto;
   width: 100%;
   height: 800px;
   background-color: lightgrey;
-  background-image: url("../img/hero-image.png");
+  background-image: url("../img/unsplash-hero-image.jpg");
   background-size: cover;
   color: #fff;
+  text-shadow: 0 0 6px #0369;
 }
 
-header nav {
-  width: 900px;
-  position: relative;
-  top: 75px;
-  right: 500px;
-  left: 0;
-  background-color: #39f9;
-}
-header nav ul {
-  margin: 0;
-  text-align: right;
-}
-header nav li {
-  display: inline;
-  margin: 0 10px 0 75px;
-  font-size: 25px;
-  line-height: 35px;
-}
-
-#intro {
+.intro {
+  margin: 0 0 0 400px;
   width: 1000px;
+  height: auto;
   position: absolute;
   top: 290px;
-  left: 400px;
-  right: 0;
-  background-clip: content-box;
-  background-color: #39f9;
-  text-align: left;
+  background-image: linear-gradient(to bottom right,#39f9,#39f9, #fff9);
   z-index: 1;
 }
-  #intro h1, #intro h2 {
+  .intro h1, .intro h2 {
     width: 600px;
     margin: 0;
   }
-  #intro h1 {
+  .intro h1 {
     padding: 15px 5px 15px 25px;
     font-size: 60px;
     line-height: 60px;
   }
-  #intro h2 {
+  .intro h2 {
     font-size: 45px;
-    padding: 0 5px 15px 40px;
+    line-height: 45px;
+    padding: 0 5px 15px 25px;
     font-family:"Alegreya", serif;
     font-weight: 300;
   }
@@ -163,7 +152,7 @@ main {
 }
 
 .section-head {
-  margin: 0 550px;
+  margin: 0 550px 0 550px;
   width: 300px;
   line-height: 40px;
   font-size: 40px;
@@ -176,16 +165,17 @@ main {
   z-index: 3;
 }
   .section-head h4 {
-    margin: 0px 0 20px 0;
+    margin: 50px 0;
     font-weight: normal;
+    text-shadow: 0 0 6px #000;
   }
 /** PORTFOLIO SECTION **/
 
-#portfolio {margin: 0 auto;}
+#portfolio {margin: 50px auto 0;}
 
 .project {
   height: 400px;
-  margin: 15px auto 30px auto;
+  margin: 50px auto 0;
   padding: 15px 0 30px 0;
   background-repeat: no-repeat;
   background-position: 400px 15px;
@@ -228,12 +218,14 @@ main {
   }
 
 /** ABOUT SECTION **/
-#about {margin: 0 auto;}
+#about {
+  margin: 50px auto 0;
+}
 
 #aboutme {
   height: 500px;
-  margin: 0 auto 30px auto;
-  padding: 15px 0 15px 0;
+  margin: 50px auto 0;
+  padding: 15px 0 30px 0;
 }
   #aboutme h5 {
     margin: 15px 0 15px 0;
@@ -278,7 +270,7 @@ main {
   }
 
 .about-detail {
-  height:auto;
+  height: auto;
   padding: 20px 0;
 }
 .about-detail p {
@@ -293,11 +285,17 @@ main {
   margin: 0 auto;
   height: 350px;
   background: #39f;
-  background-position:
 }
+#contact .section-head {
+  margin: 0 550px;
+}
+  #contact h4 {
+    margin: 0;
+    padding: 50px 0;
+  }
 
   #contact h5 {
-    margin: 60px 0 50px 0;
+    margin: 30px 0;
     text-align: center;
     font-size: 25px;
   }
@@ -331,5 +329,12 @@ main {
 }
 
 h6 {
-  margin: 0 50px;
+  margin: 0;
+  padding: 0 50px;
+  background: #39f;
+}
+h7 {
+  margin: 0;
+  padding: 0 50px;
+  background: #39f;
 }
