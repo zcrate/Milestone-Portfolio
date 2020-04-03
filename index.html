@@ -3,7 +3,7 @@
   <head>
     <title>Zachary Crate</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="img/zc-contour-blk.png" />
+    <link rel="icon" type="image/png" href="img/zc-contour-blk.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Bellota+Text&display=swap" rel="stylesheet">
@@ -18,13 +18,17 @@
 
       <nav class="title-nav">
         <ul>
-          <li><a href="#home"><i class="fas fa-home"></i></a><span class="nav-tooltip">Home</span></li>
+          <li id="icon-home"><a href="#home"><i class="nav-icon fas fa-home"></i></a>
+            <span class="nav-tooltip">Home</span></li>
 
-          <li><a href="#portfolio"><i class="fas fa-laptop-code"></i></a><span class="nav-tooltip">My Portfolio</span></li>
+          <li id="icon-portfolio"><a href="#portfolio"><i class="nav-icon fas fa-laptop-code"></i></a>
+            <span class="nav-tooltip">My Portfolio</span></li>
 
-          <li><a href="#about"><img src="img/zc-headframe-rounded-wht.png" /></a><span class="nav-tooltip">About Me</span></li>
+          <li id="icon-aboutme"><a href="#about"><img class="nav-icon" src="img/zc-headframe-rounded-wht.png" alt="aboutme" /></a>
+            <span class="nav-tooltip">About Me</span></li>
 
-          <li><a href="#contact"><i class="fas fa-hand-spock"></i></a><span class="nav-tooltip">Contact Me</span></li>
+          <li id="icon-contactme"><a href="#contact"><i class="nav-icon fas fa-hand-spock"></i></a>
+            <span class="nav-tooltip">Contact Me</span></li>
 
         </ul>
       </nav>
@@ -78,7 +82,7 @@
 
         <div class="half-width project-detail">
           <p><b>HTML5 & CSS Website</b></p>
-          <p>This is a static single-page portfolio site built from a detailed Photoshop PSD. </p>
+          <p>This is a static single-page portfolio site built from a detailed Photoshop PSD. It was the first full-page assignment in my Skillcrush web dev class.</p>
         </div>
       </div>
     </section>
@@ -88,16 +92,22 @@
       <div class="section-head"><h4>About Me</h4></div>
 
       <div id="aboutme" class="full-width">
-        <div class="half-width about-image">
-          <div id="images">
+        <div class="half-width">
+          <div id="about-images">
             <img id="image1" src="img/zc-photo-color.png" alt="Me" />
             <img id="image2" src="img/zc-photo-crown.png" alt="I'm Awesome." />
           </div>
         </div>
 
         <div class="half-width about-detail">
-          <p><b>"Web development is a perfect marriage of the analytical and the creative."</b></p>
-          <p>My passion for coding came from the joy of finding creative solutions to unique problems. I taught myself through online classes, and I eagerly pursue any opportunity to expand my skills.</p>
+
+          <p>
+            I'm a web designer and developer with a keen eye for quality, on a relentless pursuit of coding mastery.<br />
+            The joy I've found in blending my analytical curiosity with my creative instinct eventually led me to web development. While learning through online classes, I knew immediately that I was on the right path.<br />
+            My passion for this work is on open display in every project I tackle.<br />
+            I'm ready for yours.
+          </p>
+
         </div>
       </div>
     </section>
@@ -109,16 +119,16 @@
       <div id="contactme" class="full-width">
         <div id="email" class="third-width">
           <h5>Email me</h5>
-          <a href="mailto:ZackDouglas1@gmail.com"><img src="img/envelope-icon.png" /></a>
+          <a href="mailto:ZackDouglas1@gmail.com"><img src="img/envelope-icon.png" alt="envelope"/></a>
           <a href="mailto:ZackDouglas1@gmail.com">ZackDouglas1@gmail.com</a>
         </div>
 
         <div id="follow" class="third-width">
           <h5>Follow Me</h5>
-          <a href="https://github.com/zcrate">
-            <img src="img/github-icon.png" target="_blank" alt="github"/></a>
-          <a href="https://www.linkedin.com/in/zcrate/">
-            <img src="img/linkedin-icon.png" target="_blank" alt="linkedin"/></a>
+          <a href="https://github.com/zcrate" target="_blank">
+            <img src="img/github-icon.png" alt="github"/></a>
+          <a href="https://www.linkedin.com/in/zcrate/" target="_blank">
+            <img src="img/linkedin-icon.png" alt="linkedin"/></a>
         </div>
 
         <div id="meet" class="third-width">
@@ -129,6 +139,6 @@
 
     </footer>
   </main>
-  <h6>Copyright Zachary Crate 2020  |  Hero Photo by Andyone on Unsplash</h6>
+  <h6>Copyright Zachary Crate 2020  |  Hero Photo by Andyone on Unsplash  |  AboutMe photo by Allison Reynolds</h6>
 </body>
 </html>
